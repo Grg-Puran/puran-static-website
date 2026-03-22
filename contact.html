@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Puran Portfolio</title>
+    <meta name="description" content="Get in touch with Puran for IT collaborations and opportunities.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="page-container">
+        <header class="page-header">
+            <h1>Let's Connect</h1>
+            <p>Open for opportunities, networking, and technical discussions.</p>
+        </header>
+
+        <section class="contact-section">
+            <div class="contact-card">
+                <h2>Reach Out</h2>
+                <ul class="contact-list">
+                    <li>
+                        <span class="icon">📧</span>
+                        <a href="mailto:puran@example.com">puran@example.com</a>
+                    </li>
+                    <li>
+                        <span class="icon">💼</span>
+                        <a href="#" target="_blank">LinkedIn Profile</a>
+                    </li>
+                    <li>
+                        <span class="icon">🐙</span>
+                        <a href="#" target="_blank">GitHub Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="contact-form"
+                onsubmit="event.preventDefault(); alert('Form submission is simulated in this static demo.');">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required placeholder="How can we work together?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="js/components.js"></script>
+</body>
+
+</html>
